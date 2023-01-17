@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="music.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <nav class="menu">
+        <ul>
+    <li>
+       <a href="index.html"> <h1 class="title">RAMPAGE</h1></a>
+    </li>
+    
+       <li> <a class="home" href="index.html">Home</a> </li>
+       <li> <a class="images" href="images.html">Images</a></li>
+       <li> <a class="music" href="music.html">Music</a></li>
+        <li><a class="videos" href="#videos">Videos</a></li>
+        <li><a class="contacts" href="#contact">Contacts</a></li>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/Jiggykenya"><i class="fab fa-twitter-square"></i></a>
+    <li><a class="button" href="https://www.youtube.com/@jiggy4058">Subscribe</a></li>
+</nav>
+
+<section>
+
+  <section id="intro">
+  <h2>JIGGY KENYA.</h2>
+    <p>Music has been a Passion for me my whole life I am excited to explore new possibilities through new Tech.
+        <br> Subscribe to my Youtube channel for more on Jiggy Music.
+    </p>
+    <a class="button" href="Email">Listen</a> <a class="button" href="Email">Buy Music</a>
+  </section>
+  <div class="row">
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+  </div>
+  <div class="row">
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+  </div>
+</section>
+
+    <div class="gradient"></div>
+      <section id="contact">
+        <h2>
+        Contact Me
+        </h2>
+        <p>
+            Lets Connect make Music, Collaborate on movies and writing impactful Code.
+        </p>
+        <a class="button" href="Instagram">DM Me</a>
+       </section> </div>
+</body>
+<footer>
+    <h2>JIGGY: MUSIC</h2>
+    <ul>
+      <li>
+        <a href="https://www.youtube.com/@jiggy4058"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/itsjiggygram/"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/Jiggykenya"><i class="fab fa-twitter-square"></i></a>
+        </li>
+</ul> 
+<p>
+    <small>
+      &copy;  2023 Jiggy. All rights reserved. 
+    </small>
+  </p> 
+
+</footer>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1} 
+  slides[slideIndex-1].style.display = "block"; 
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+</script>
+</html>
