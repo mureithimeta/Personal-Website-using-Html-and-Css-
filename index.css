@@ -72,9 +72,10 @@ div.gradient{
 }
 
 div.background{
-background-image: url("Personal-Website-using-Html-and-Css-/images/WHEN\ WE\ ALL\ FALL\ ASLEEP\,\ WHERE\ DO\ WE\ GO_.jpg");
+background-image: url("images/2.jpg");
 background-size: cover;
 background-repeat: no-repeat;
+text-align: center;
 }
 
 
@@ -137,7 +138,8 @@ nav [class *="fa-"]:hover{
  }
  #projects h3{
     color: rgb(246, 255, 0);
-    text-align: justify;
+    text-align: center;
+    padding-bottom: 1%;
  }
  #projects h4{
     font-size: 1rem;
@@ -156,13 +158,15 @@ nav [class *="fa-"]:hover{
     text-align: end;
 }
 .blackbox{
-    background-color: #000000;
+    background-color: #1c57637c;
     color: rgb(255, 255, 255);
     padding: 1rem;
     border-radius: 10px;
     font-size: 1rem;
     line-height: 1.5;
     max-width: 900px;
+    margin: auto;
+    text-align: center;
 
 }
 
@@ -189,47 +193,12 @@ nav [class *="fa-"]:hover{
     margin: auto;
     gap: 30px;
 }
-
-/* Slideshow container */
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;  
-  }
-  
-  .mySlides {
-    display: none;
-    max-width: 1000px;
-    margin: auto;
-    padding: 10px;
-  }
-  
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #00ffdd;
-  }
-  
-#images:hover{
-    background-color: #eee;
-}
-
 #projects img{
     margin: auto;
     border-radius: 25px;
     padding: 1rem;
 }
 .projects-section{
-    background-image: url("Personal-Website-using-Html-and-Css-/images/WHEN\ WE\ ALL\ FALL\ ASLEEP\,\ WHERE\ DO\ WE\ GO_.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
