@@ -1,42 +1,42 @@
 body{
-    background-image: url(Personal-Website-using-Html-and-Css-/images/2.jpg);
+    background-image: url(images/2.jpg);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    font-size: var(font-size);
    padding: 0;
    margin: 0;
    background-size: cover;
-   background-repeat: repeat;
+   background-repeat: no-repeat;
 }
 
-  h1, h2, h3{
+h1, h2, h3{
     margin: 0;
     color: aliceblue;
-  }
-  a {
+}
+a {
     color: rgb(0, 72, 255);
-  }
-  p{
+}
+p{
     color: aliceblue;
-  }
-  a:hover{
+}
+a:hover{
     color: purple;
     text-decoration: none;
-    }
-    nav{
+}
+nav{
       font-family: monospace;
       font-size: 80%;
       padding: 1rem;
-  }
-  nav [class *="fa-"] {
+}
+nav [class *="fa-"] {
       font-size: 150%;
       color: rgb(0, 140, 255);
       display: block;
-  }
-  nav, h1, a{
+}
+nav, h1, a{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   
-  }
-  nav ul {
+}
+nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -45,77 +45,82 @@ body{
     justify-content: center;
     align-items: left;
     gap: 2rem; 
-  }
-  nav li:first-child{
+}
+nav li:first-child{
     flex-basis: 100%;
     text-align: center;
-  }
-  nav a{
+}
+nav a{
     color: rgb(255, 255, 255);
     text-decoration: none;
     display: block;
-  }
-  nav a:hover{
+}
+nav a:hover{
     color: rgb(165, 42, 132);
-  }
-  nav [class *="fa-"]:hover{
+}
+nav [class *="fa-"]:hover{
     color: rgb(174, 38, 183);
-  }
-  #intro{
+}
+#intro{
     padding: 1rem 1rem 1.5rem 1rem;
     max-width: 1200px;
-    width: 80%;
+    width: 60%;
     text-align: center;
     margin: 0 auto;
- }
- #intro p {
+}
+#intro p {
      font-size: 1rem;
      line-height: 1.5;
-     max-width: 80%;
+     max-width: 60%;
      margin: auto;
      padding-top: 10px;
      padding-bottom: 20px;
- }
+}
 
- #intro h2{
+#intro h2{
      font-size: 3rem;
      font-weight: bold;
      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
  }
 #intro a{
 margin: 10px;
-
 }
 .column {
     float: left;
     width: 33.33%;
-    margin: auto;
+    background-color: aliceblue;
+    height: 450px;
+    margin: 0;
     padding: 0;
-  }
 
-  div{
+}
+div{
 padding:0;
 display: flex;
-gap: 1rem;
-margin: 1.2rem;
+gap: 1.5rem;
+padding-top: 10px;
+margin: auto;
+padding-left: 20px;
+
 }
   
-
-  .row:after {
-    display: inline-block;
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
     clear: both;
-  }
-  #contact{
+}
+#contact{
     width: 400px;
     text-align: center;
     margin: 0 auto;
-    padding: 8rem 0;
-  } 
-  #contact p:last-child{
+    padding: 2rem 0;
+} 
+#contact p:last-child{
     margin: 1rem;
-  
-  }
-  .button{
+}
+.button{
     background-color: rgb(0, 217, 255);
     color: rgb(0, 0, 0);
     padding: 0.5rem;
@@ -128,15 +133,23 @@ margin: 1.2rem;
     color: rgb(0, 0, 0);
     background-color: rgb(255, 42, 244);
 }
-  .active, .dot:hover {
+.active, .dot:hover {
     background-color: #717171;
-  }
+}
 
-  footer{
+  
+  /* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+  
+footer{
     text-align: center;
     padding: .5rem 0;
-  }
-  footer ul{
+}
+footer ul{
     list-style-type: none;
     padding: 0;
     margin: 0.1rem 0;
@@ -146,49 +159,14 @@ margin: 1.2rem;
     gap: 3rem;
     font-size: 1rem;
     padding-top: 10px;
-  }
-
-.youtube-slider{
-  width: 100%;
-  display: flex;
-
 }
-a {
-  color: rgb(0, 191, 255);
-}
-a:hover{
-  color: purple;
-  text-decoration: none;
-}
-
-@media (min-width: 550px){
-  img{
-   display: flex;
-   max-width: 100%;
-  }
-}
-@media (min-width: 850px) {
- nav{
-  max-width: 1200px;
-  margin: 0 auto;
-}
-nav li:first-child{
-  flex-basis: auto;
-  text-align: left;
-  margin-right: auto;
-} 
-.text{
-     
-  text-align: center;
-}
-}
-
+  
   /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
     .column {
-      max-width: 100%;
-      max-height: auto;
-      height: auto;
+      width: 100%;
     }
-
+    images{
+      width: 100%;
+    }
   }
